@@ -34,6 +34,6 @@ class Card extends Model
     }
     public function types()
     {
-        return $this->hasOne(Types::class, 'id', 'types_id');
+        return $this->hasOne(Types::class, 'id', 'subtypes.types_id');
     }
 }

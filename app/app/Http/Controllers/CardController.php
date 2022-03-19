@@ -27,8 +27,7 @@ class CardController extends Controller
 
     public function show($id)
     {
-        return $this->successResponse(Card::with('subtypes')
-            ->with('types')
+        return $this->successResponse(Card::with('subtypes','types')
             ->find($id));
     }
 
