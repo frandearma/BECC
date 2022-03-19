@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "da53ce60-a0ac-4784-bf14-f4110278c586",
+		"name": "BECC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Types",
+			"item": [
+				{
+					"name": "Show Card Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/types",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subtypes",
+			"item": [
+				{
+					"name": "Show Card Subtypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/subtypes",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"subtypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Show Paginate Cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/cards?per_page=10&page=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show one Card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/card/6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"card",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Magic Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/card?name=Dark Hole&description=Destroys all monster in the field.&price=220&firstEdition=0&image=https://static.wikia.nocookie.net/yugioh/images/f/fa/DarkHole-YS15-EU-SR-1E.png&atk=&def=&subtypes_id=25&code=123451",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"card"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Dark Hole"
+								},
+								{
+									"key": "description",
+									"value": "Destroys all monster in the field."
+								},
+								{
+									"key": "price",
+									"value": "220"
+								},
+								{
+									"key": "firstEdition",
+									"value": "0"
+								},
+								{
+									"key": "image",
+									"value": "https://static.wikia.nocookie.net/yugioh/images/f/fa/DarkHole-YS15-EU-SR-1E.png"
+								},
+								{
+									"key": "atk",
+									"value": ""
+								},
+								{
+									"key": "def",
+									"value": ""
+								},
+								{
+									"key": "subtypes_id",
+									"value": "25"
+								},
+								{
+									"key": "code",
+									"value": "123451"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Trap Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/card?name=Magic Cylinder&description=When an opponent's monster declares an attack: Target the attacking monster; negate the attack, and if you do, inflict damage to your opponent equal to its ATK.&price=223&firstEdition=1&image=https://static.fandomspot.com/images/05/14477/20-magic-cylinder-card-yugioh.jpg&atk=&def=&subtypes_id=34&code=62279055",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"card"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Magic Cylinder"
+								},
+								{
+									"key": "description",
+									"value": "When an opponent's monster declares an attack: Target the attacking monster; negate the attack, and if you do, inflict damage to your opponent equal to its ATK."
+								},
+								{
+									"key": "price",
+									"value": "223"
+								},
+								{
+									"key": "firstEdition",
+									"value": "1"
+								},
+								{
+									"key": "image",
+									"value": "https://static.fandomspot.com/images/05/14477/20-magic-cylinder-card-yugioh.jpg"
+								},
+								{
+									"key": "atk",
+									"value": ""
+								},
+								{
+									"key": "def",
+									"value": ""
+								},
+								{
+									"key": "subtypes_id",
+									"value": "34"
+								},
+								{
+									"key": "code",
+									"value": "62279055"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/card/6?name=MAGIC CYLINDER&atk=&def=",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"card",
+								"6"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "MAGIC CYLINDER"
+								},
+								{
+									"key": "atk",
+									"value": ""
+								},
+								{
+									"key": "def",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/card/6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"card",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
