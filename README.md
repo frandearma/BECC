@@ -21,7 +21,7 @@ $ php artisan migrate
 $ php artisan serve
 ```
 
-###Postman Collections
+## Postman Collections
 #### Include in root folder.
 
 ## Routes
