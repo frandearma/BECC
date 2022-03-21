@@ -1,6 +1,6 @@
 # Backend Engineer Coding Challenge
 
-##Set-up
+## Set-up
 
 ``` bash
 # install laravel
@@ -24,7 +24,7 @@ $ php artisan serve
 ###Postman Collections
 #### Include in root folder.
 
-# Routes
+## Routes
 
 | Route               | Login       | Description                     |
 | ------------------- | ----------- | ------------------------------- |
